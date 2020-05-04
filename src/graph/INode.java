@@ -1,12 +1,13 @@
 package graph;
 
-import java.util.Collection;
+import java.util.ArrayList;
+import java.util.Map;
 
 public interface INode
 {
     String getName();
     
-    Collection<INode> getNeighbors();
+    ArrayList<INode> getNeighbors();
     
     void addDirectedEdgeToNode(INode neighbor, int weight);
     
@@ -19,4 +20,6 @@ public interface INode
     boolean hasEdge(INode node);
     
     int getWeight(INode node);
+
+	Map<INode, Integer> getNeighborMap();
 }

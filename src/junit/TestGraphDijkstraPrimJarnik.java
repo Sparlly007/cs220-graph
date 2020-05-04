@@ -52,7 +52,7 @@ graph dijkstra1 {
     {
         
         IGraph g=GraphFactories.createUndirectedWeightedGraphFromEdgeList(new FileInputStream("tests/dijkstra1.txt"));
-        Map<INode, Integer> shortPaths = g.dijkstra("A");
+        Map<String, Integer> shortPaths = g.dijkstra("A");
         
         assertEquals(7, shortPaths.size());
         

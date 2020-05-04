@@ -75,7 +75,7 @@ public interface IGraph
      * @param startName
      * @return
      */
-    Map<INode,Integer> dijkstra(String sourceNode);
+    Map<String,Integer> dijkstra(String sourceNode);
     
     /**
      * Perform Prim-Jarnik's algorithm to compute a Minimum Spanning Tree (MST).
